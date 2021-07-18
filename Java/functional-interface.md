@@ -5,7 +5,7 @@ Functional Interface
  + SAM(Single Abstract Method) 인터페이스
  + @FunctionalInterface 어노테이션을 가진 인터페이스
 
-자바에서 함수형 프로그래밍
+1.자바에서 함수형 프로그래밍
 -------------------------------
     함수형 인터페이스는 사용자가 정의를 할 수도 있으며, 자바에서 내부적으로 제공하는 함수도 있다.
  + 함수형 First class obeject로 사용할 수 있다.
@@ -15,11 +15,8 @@ Functional Interface
  + 고차 함수(High-Order Function)
    - 함수가 함수를 매개변수로 받을 수 있고 함수를 리턴할 수도 있다.
  + 불변성
-
-
-
-    
-자바 내장 함수형 인터페이스
+ 
+2.자바 내장 함수형 인터페이스
 --------------------------------
  + Function<T,R>
    - T 타입을 인자로 받아 R 타입을 리턴
