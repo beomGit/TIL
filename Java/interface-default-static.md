@@ -2,7 +2,7 @@ Default & Static Interface
 ===============================
 
 
-1.Default Interface
+1.1.Default Interface
 -------------------------------
      Java 8에서 Lambda expressions가 추가되면서 기존의 인터페이스에 추가적인 함수의 구현이 필요하게 되었습니다.
     이와 관련하여 기존에 구현된 클래스에 대해서 영향이 가지 않게 하기 위하여 "기본 인터페이스"와 "스태틱 인터페이스"가 추가되었습니다.
@@ -18,7 +18,32 @@ Default & Static Interface
     
      인터페이스를 상속 받는 인터페이스에서 다시 추상 메소드로 변경할 수도 있습니다.
  
+1.2.변화
+-------------------------------
+      Java 8 이전에는 구현할 클래스 내에 불필요한 인터페이스 기능을 상속 받지 않기 위해 인터페이스와 구현할 클래스 사이에 추상 클래스를 선언하여 사용하기도 하였습니다.
+     그때에 사용되던 방식은 인터페이스의 기능들을 추상클래스에 구현한 후 구현 클래스에서는 불필요한 기능을 배제하여 추상클래스를 상속 받아 필요한 기능만 사용을 하였습니다.
+     
+     기본 인터페이스가 추가됨으로써 추상 클래스를 구현하지 않고 기능을 상속 받을 수 있게 되었습니다.
+     
 2.Static Interface
 --------------------------------
      해당 인터페이스의 타입과 관련된 헬퍼 또는 유틸리티 메소드를 제공할 때 인터페이스에 스태틱 메소드를 제공할 수 있습니다.
     스태틱 인터페이스는 기본 메소드와 다르게 재정의할 수 없습니다.
+
+
+3.Java8 이후 추가된 Default & Static Interface
+--------------------------------
+ + Iterable의 기본 메소드
+   - forEach()
+   - spliterator()
+ + Collection의 기본 메소드
+   - stream() / parallelStream()
+   - removeIf(Predicate)
+   - spliterator()
+ + Comparator의 기본 메소드 및 스태틱 메소드
+   - reversed()
+   - thenComparing()
+   - static reverseOrder() / naturalOrder()
+   - static nullsFirst() / nullsLast()
+   - static comparing()
+ + ...
