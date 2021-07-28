@@ -32,5 +32,5 @@ Stream API
 검사|.anyMatch(), .allMatch(), .noneMatch()
 통계|.count(), .min(), .max()
 연산|.sum(), .average()
-수집|.collect()
+수집|.collect() 
 
